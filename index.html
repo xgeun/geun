@@ -2,13 +2,18 @@
 <html lang="ko">
     <head>
         <meta charset="UTF-8">
+        <!-- 구글에서 검색 안되게 처리 : 실제 사이트에서는 XXX -->
+        <meta name="robots" content="noindex,nofollow">
+        <!-- IE의 기술이 Edge와 비슷해지게 만들어주는 코드 : 완벽한 크로스브라우징이 되진 않지만 많이 지원 -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>PORTFOLIO</title>
 
+        <!-- css -->
         <link rel="stylesheet" href="./css/layout.css">
         <link rel="stylesheet" href="./css/main.css">
 
+        <!-- js -->
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
         <script src="js/isotope.pkgd.min.js"></script>
         <script src="js/main.js"></script>
@@ -17,13 +22,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
     </head>
     <body>
-
         <main class="container">
             <section class="intro">
-                <span class="bg01"></span>
-                <span class="bg02"></span>
-                <span class="bg03"></span>
-                <span class="bg04"></span>
                 <h2 class="title">
                     <span>WELCOME TO</span>
                     <span>GEUN'S</span>
@@ -33,73 +33,83 @@
             </section>
 
             <section class="works">
-                <h2 class="sc_title">WORKS</h2>
+                <h2 class="title">WORKS</h2>
                 <div class="filter_area">
                     <button data-filter="*" class="on">All</button>
                     <button data-filter=".res">반응형</button>
                     <button data-filter=".ada">적응형</button>
-                    <button data-filter=".cl">클론코딩</button>
                 </div>
 
                 <div class="grid group_list">
 
                     <div class="cont res">
-                        <div class="wrap">
-                            <img src="img/유로바이크투어.png" alt="유로바이크투어 목업이미지">
-                            <div class="link_wrap">
-                                <h2>PC,MOBILE 반응형</h2>
-                                <h2>O&C건설</h2>
-                                <div class="hash_wrap">
-                                    <span>#4일</span>
-                                    <span>#반응형</span>
-                                    <span>#디자인100%</span>
-                                    <span>#퍼블리싱100%</span>
-                                </div>                                
-                                <div class="links">
-                                    <a href="http://eurobiketour.dothome.co.kr" class="link_more">링크 바로가기</a>
-                                </div>
+                        <img src="img/euro.png" alt="유로바이크투어 목업이미지">
+                        <div class="link_wrap">
+                            <h2>PC,MOBILE 반응형</h2>
+                            <h2>O&C건설</h2>
+                            <div class="hash_wrap">
+                                <span>#4일</span>
+                                <span>#반응형</span>
+                                <span>#디자인100%</span>
+                                <span>#퍼블리싱100%</span>
+                            </div>                                
+                            <div class="links">
+                                <a href="http://eurobiketour.dothome.co.kr" class="link_more">링크 바로가기</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="cont res">
-                        <div class="wrap">
-                            <img src="img/ANSSEM.png" alt="ANSSEM 목업이미지">
-                            <div class="link_wrap">
-                                <h2>PC,MOBILE 반응형</h2>
-                                <h2>ANSSEM</h2>
-                                <div class="hash_wrap">
-                                    <span>#5일</span>
-                                    <span>#반응형</span>
-                                    <span>#디자인100%</span>
-                                    <span>#퍼블리싱100%</span>
-                                </div>
-                                <div class="links">
-                                    <a href="http://anssem.dothome.co.kr" class="link_more">링크 바로가기</a>
-                                </div>
+                        <img src="img/hass.png" alt="ANSSEM 목업이미지">
+                        <div class="link_wrap">
+                            <h2>PC,MOBILE 반응형</h2>
+                            <h2>하스스튜디오</h2>
+                            <div class="hash_wrap">
+                                <span>#5일</span>
+                                <span>#반응형</span>
+                                <span>#퍼블리싱80%</span>
+                            </div>
+                            <div class="links">
+                                <a href="https://xgeun.github.io/portfolio/" class="link_more">링크 바로가기</a>
                             </div>
                         </div>
                     </div>
                     
                     <div class="cont ada">
-                        <div class="wrap">
-                            <img src="img/DFNDURGA.png" alt="DFNDURGA 목업이미지">
-                            <div class="link_wrap">
-                                <h2>PC,MOBILE 적응형</h2>
-                                <h2>DF&DURGA</h2>
-                                <div class="hash_wrap">
-                                    <span>#7일</span>
-                                    <span>#적응형</span>
-                                    <span>#디자인100%</span>
-                                    <span>#퍼블리싱100%</span>
-                                </div>
-                                
-                                <div class="links">
-                                    <a href="http://dfndurga.dothome.co.kr" class="link_more">링크 바로가기</a>
-                                </div>
+                        <img src="img/df.png" alt="DFNDURGA 목업이미지">
+                        <div class="link_wrap">
+                            <h2>PC,MOBILE 적응형</h2>
+                            <h2>DF&DURGA</h2>
+                            <div class="hash_wrap">
+                                <span>#7일</span>
+                                <span>#적응형</span>
+                                <span>#디자인100%</span>
+                                <span>#퍼블리싱100%</span>
+                            </div>
+                            
+                            <div class="links">
+                                <a href="http://dfndurga.dothome.co.kr" class="link_more">PC링크 바로가기</a>
+                                <a href="http://mdfndurga.dothome.co.kr" class="link_more">MOBILE링크 바로가기</a>
                             </div>
                         </div>
-                    </div>            
+                    </div>
+
+                    <div class="cont res">
+                        <img src="img/anssem.png" alt="ANSSEM 목업이미지">
+                        <div class="link_wrap">
+                            <h2>PC,MOBILE 반응형</h2>
+                            <h2>ANSSEM</h2>
+                            <div class="hash_wrap">
+                                <span>#5일</span>
+                                <span>#반응형</span>
+                                <span>#디자인100%</span>
+                                <span>#퍼블리싱100%</span>
+                            </div>
+                            <div class="links">
+                                <a href="http://anssem.dothome.co.kr" class="link_more">링크 바로가기</a>
+                            </div>
+                        </div>
+                    </div>        
                 </div>
             </section>
 

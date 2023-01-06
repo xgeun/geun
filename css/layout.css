@@ -9,7 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
 
-body {font-family: 'Do Hyeon', sans-serif; font-size: 16px; color: #fff; overflow: hidden; background: #666}
+body {font-family: 'Do Hyeon', sans-serif; font-size: 16px; color: #fff; overflow: hidden; background-color: #666;}
 
 .cursor { width: 80px; height: 80px; background: #fff; border-radius: 50%; mix-blend-mode: difference; position: fixed; pointer-events: none; z-index: 10;}
 
@@ -28,8 +28,6 @@ body {font-family: 'Do Hyeon', sans-serif; font-size: 16px; color: #fff; overflo
 
 
 @media (max-width: 768px) {
-  .cursor { display: none; }
-  .cursor_txt { display: none;}
 
   .header .logo {font-size: 18px;}
   .header .navbar .menu_btn { display: block; position: relative; z-index: 2; color: #fff;}
