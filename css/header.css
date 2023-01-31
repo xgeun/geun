@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+
+#header{position: fixed; top: 0; left: 0; z-index: 5000; width: 100%; height: 80px; background-color: transparent;}
+#header:hover{background-color: #000; transition: 0.3s;}
+#header h1 a{font-family: '87MMILSANG'; color: #fff; padding: 5px 10px; border: 1px solid #fff; border-radius: 15px;}
+
+#header .inner_wrap{display: flex; height: 100%; justify-content: space-between; align-items: center;}
+
+
+/* desktop */
+@media screen and (min-width: 1024px){
+    /* none part */
+    .panelIcon{display: none;}
+
+    /* view part */
+    
+    #header .gnb ul {display: flex;}
+    #header .gnb li{margin-right: 100px;}
+    #header .gnb li:last-child{margin-right: 0;}
+    #header .gnb a{font-size: 1.25rem; color: #fff; font-family: '87MMILSANG';}
+    #header .gnb a:hover{font-weight: bold; text-decoration:overline;}
+}
+
+/* tablet & mobile */
+@media screen and (max-width: 1023px){
+    #header{height: 50px;}
+    #header:hover{background-color: transparent;}
+
+    #header .panelIcon{position: absolute; right: 16px; z-index: 5300; width: 32px; height: 24px; transition: 0.2s;}
+    #header .panelIcon span{position: absolute; left: 0; width: 100%; height: 4px; background-color: #000; transition: 0.2s;}
+    #header .panelIcon span:nth-child(1){top: 0;}
+    #header .panelIcon span:nth-child(2){top: 10px;}
+    #header .panelIcon span:nth-child(3){top: 20px;}
+
+    /* panelIcon active */
+    #header .panelIcon.active{transform: rotate(45deg); transition-delay: 0.4s;}
+    #header .panelIcon.active span:nth-child(2){transform: scaleX(0);}
+    #header .panelIcon.active span:nth-child(1){top: 10px; transition-delay: 0.2s;}
+    #header .panelIcon.active span:nth-child(3){top: 10px; transform: rotate(90deg); transition-delay: 0.2s;}
+
+
+    #header .gnb{position: fixed; top: 0; right: -100%; /* 처음엔 화면밖에 나가있어야함 */
+    z-index: 5100; width: 70%; height: 100%; padding: 16px; padding-top: 60px; background-color: #fff; transition: 0.6s ease-out;}
+    #header .gnb.active{right: 0;} /* 화면 안으로 들어오게 처리 */
+
+    #header .gnb > ul{width: 100%; border-top: 1px solid #333;}
+    #header .gnb > ul > li > a{display: block; width: 100%; height: 50px; font-size: 1.5rem; line-height: 49px; text-align: center; margin-top: 50px; color: #333;}
+}

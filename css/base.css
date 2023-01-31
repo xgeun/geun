@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+@font-face{font-family: '87MMILSANG'; src: local(※), url(../fonts/87MMILSANG-Oblique.woff) format("woff"); font-weight: 400;}
+@font-face {font-family: 'Pretendard-Regular'; src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff'); font-weight: 400; font-style: normal;}
+@font-face {
+    font-family: 'LeferiPoint-BlackObliqueA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-BlackObliqueA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* basic base */
+*{padding: 0; margin: 0; box-sizing: border-box; font-family: 'Pretendard-Regular', "맑은 고딕", "Apple SD Gothic Neo", sans-serif; color: #666; font-size: 16px;}
+body{background-color: #333;}
+li{ list-style: none; }
+a{ text-decoration: none; }
+img{ border: none; }
+button{ cursor: pointer; }
+iframe{ border: none; } 
+table{ border-spacing: 0; border-collapse: collapse; }
+fieldset{ border: none; }
+label.away{ position: absolute; left: -999em; } 
+
+/* pc는 홈페이지 가운데, 나머지기기에서는 100%로 처리 */
+/* ★★★★★★★★★★★★★★★★★★★★★★★★★★★★ */
+.inner_wrap{ 
+    width: 1400px; /* 100%일때 좌우 패딩을 더한 수치 : 1520 + 32 */
+    max-width: 100%; /* 창사이즈가 1212보다 작아질때 100%로 처리 */
+    padding: 0 16px; /* 태블릿, 모바일에서의 좌우 여백 */
+    margin: 0 auto;
+}
+
+/* font base */
+@media screen and (max-width: 375px){
+    *{font-size: 14px; }
+}
+
+@media screen and (max-width: 320px){
+    *{font-size: 12px; }
+}

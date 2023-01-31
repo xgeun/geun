@@ -1,0 +1,97 @@
+@charset "utf-8";
+#portfolio_contact{background-color: #333;}
+#portfolio_contact h1{position: absolute; top: 50px; left: 50px; font-family: '87MMILSANG'; font-size: 5rem; color: rgba(237, 237, 237, 0.9); margin-top: 50px;}
+
+#portfolio_contact .wrap{width: 100%; display: flex;  justify-content: space-between;}
+
+#portfolio_contact .kakao_link{width: 35%; height: 350px; background-color: #999; border-radius: 20px; box-shadow: 5px 5px 5px 5px; }
+#portfolio_contact .kakao_link .text_wrap{position: relative; top: 50%; transform: translateY(-50%); margin: 0 auto;}
+#portfolio_contact .kakao_link:hover{background-color: #666; transition: 0.5s;}
+#portfolio_contact .kakao_link:hover a{color: #000; background-color: #fff; transition: 0.5s; border-radius: 40px; }
+#portfolio_contact .kakao_link img{display: block; width: 200px; height: 200px; padding: 30px 30px; margin: 0 auto;}
+
+#portfolio_contact .kakao_btn{text-align: center;}
+#portfolio_contact .kakao_btn > a{padding: 10px 20px; color: #fff; font-size: 1.5rem; font-family: '87MMILSANG';}
+
+
+#portfolio_contact .mail_link{width: 60%; height: 350px; background-color: #999; border-radius: 20px; box-shadow: 5px 5px 5px 5px;}
+#portfolio_contact .mail_link .text_wrap{position: relative; top: 50%; transform: translateY(-50%); margin: 0 auto;}
+#portfolio_contact .mail_link:hover{background-color: #666; transition: 0.5s;}
+#portfolio_contact .mail_link:hover a{background-color: #fff; color: #000; transition: 0.5s;  border-radius: 40px;}
+#portfolio_contact .mail_link h2{margin-bottom: 50px; text-align: center; font-size: 4rem; font-family: '87MMILSANG'; color: #fff;}
+#portfolio_contact .mail_btn{text-align: center;}
+#portfolio_contact .mail_btn > a{padding: 10px 20px; color: #fff; font-size: 1.5rem; font-family: '87MMILSANG'; }
+
+
+.flow-text {
+  background-color: #000;
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    display: flex;
+    flex: 0 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: 0.3s;
+    font-weight:bold;
+    color: #9D9993;
+}
+.flow-wrap {
+  animation: textLoop 5s linear infinite;
+  padding-right: 1.4881vw;
+  font-family: '87MMILSANG';
+  font-size: 2.5rem;
+  color: #fff;
+}
+.flow-wrap span {
+  animation: textLoop 5s linear infinite;
+  padding-right: 1.4881vw;
+  font-family: '87MMILSANG';
+  font-size: 2.5rem;
+  -webkit-text-stroke: 1px #999;
+
+}
+
+@keyframes textLoop {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+
+
+/* tablet & mobile */
+@media screen and (max-width: 1023px) {
+  #portfolio_contact h1{display: none;}
+  
+  #portfolio_contact .wrap{display: block;}
+  #portfolio_contact .kakao_link{width: 300px; height: 300px; margin: 20px auto;}
+  #portfolio_contact .mail_link{width: 600px; height: 300px; margin: 0 auto;}
+
+  .flow-text{bottom: 40px;}
+}
+
+/* mobile */
+@media screen and (max-width:500px) {
+  #portfolio_contact h1{display: block; font-size: 2rem;}
+  
+  #portfolio_contact .kakao_link{width: 80%; height: 200px; margin: 20px auto;}
+  #portfolio_contact .kakao_link img{width: 150px; height: 150px; padding: 15px 15px;}
+  #portfolio_contact .kakao_btn > a{font-size: 1rem;}
+  #portfolio_contact .kakao_btn > a{padding: 5px 10px; font-size: 1rem;}
+
+  #portfolio_contact .mail_link{width: 80%; height: 200px; margin: 0 auto;}
+  #portfolio_contact .mail_link h2{font-size: 2rem;}
+  #portfolio_contact .mail_btn > a{padding: 5px 10px; font-size: 1rem;}
+
+  .flow-text{bottom: 40px;}
+}
+@media screen and (max-width:400px) {
+  #portfolio_contact h1{display: none;}
+  .flow-text{bottom: 30px;}
+}

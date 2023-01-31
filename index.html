@@ -2,203 +2,423 @@
 <html lang="ko">
     <head>
         <meta charset="UTF-8">
-        <!-- 구글에서 검색 안되게 처리 : 실제 사이트에서는 XXX -->
-        <meta name="robots" content="noindex,nofollow">
-        <!-- IE의 기술이 Edge와 비슷해지게 만들어주는 코드 : 완벽한 크로스브라우징이 되진 않지만 많이 지원 -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PORTFOLIO</title>
+        <title>Publisher Geun</title>
 
-        <!-- css -->
-        <link rel="stylesheet" href="./css/layout.css">
-        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="css/jquery.fullpage.min.css">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
 
-        <!-- js -->
-        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-        <script src="js/isotope.pkgd.min.js"></script>
-        <script src="js/main.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <script src="js/jquery.fullpage.min.js"></script>
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/common.js"></script>
     </head>
     <body>
-        <main class="container">
-            <section class="intro">
-                <h2 class="title">
-                    <span>WELCOME TO</span>
-                    <span>GEUN'S</span>
-                    <span>PUBLISHING</span>
-                    <span>PORTFOLIO</span>
-                </h2>
-            </section>
 
-            <section class="works">
-                <h2 class="title">WORKS</h2>
-                <div class="filter_area">
-                    <button data-filter="*" class="on">All</button>
-                    <button data-filter=".res">반응형</button>
-                    <button data-filter=".ada">적응형</button>
-                </div>
+        <header id="header">
+            <div class="inner_wrap">
+                <a href="#" class="panelIcon" title="패널열기">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+                <h1><a href="index.html">GEUN</a></h1>
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#portfolio_profile">ABOUT</a></li>
+                        <li><a href="#portfolio_page">PORTFOLIO</a></li>
+                        <li><a href="#portfolio_contact">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-                <div class="grid group_list">
+        <div id="fullpage">
 
-                    <div class="cont res">
-                        <img src="img/euro.png" alt="유로바이크투어 목업이미지">
-                        <div class="link_wrap">
-                            <h2>PC,MOBILE 반응형</h2>
-                            <h2>O&C건설</h2>
-                            <div class="hash_wrap">
-                                <span>#4일</span>
-                                <span>#반응형</span>
-                                <span>#디자인100%</span>
-                                <span>#퍼블리싱100%</span>
-                            </div>                                
-                            <div class="links">
-                                <a href="http://eurobiketour.dothome.co.kr" target="_blank" class="link_more">링크 바로가기</a>
-                            </div>
+            <div class="section" id="portfolio_main">
+                <main>
+                    <video src="img/main/main_video.mp4" id="main_video" muted autoplay loop data-keepplaying></video>
+                    <div class="text_wrap">
+                        <div class="text_effect">
+                            WEB PUBLISHER PORTFOLIO
+                        </div>
+                        <div class="text_effect2">
+                            Kim Chang Geun
                         </div>
                     </div>
+                </main>
+            </div>
 
-                    <div class="cont res">
-                        <img src="img/hass.png" alt="ANSSEM 목업이미지">
-                        <div class="link_wrap">
-                            <h2>PC,MOBILE 반응형</h2>
-                            <h2>하스스튜디오</h2>
-                            <div class="hash_wrap">
-                                <span>#5일</span>
-                                <span>#반응형</span>
-                                <span>#퍼블리싱80%</span>
-                            </div>
-                            <div class="links">
-                                <a href="https://xgeun.github.io/portfolio/" target="_blank" class="link_more">링크 바로가기</a>
-                            </div>
-                        </div>
+            <div class="section" id="portfolio_profile">
+                <h1>01. PROFILE</h1>
+                <div class="contents_wrap">
+                    <div class="about">
+                        <div class="photo"></div>
                     </div>
-                    
-                    <div class="cont ada">
-                        <img src="img/df.png" alt="DFNDURGA 목업이미지">
-                        <div class="link_wrap">
-                            <h2>PC,MOBILE 적응형</h2>
-                            <h2>DF&DURGA</h2>
-                            <div class="hash_wrap">
-                                <span>#7일</span>
-                                <span>#적응형</span>
-                                <span>#디자인100%</span>
-                                <span>#퍼블리싱100%</span>
-                            </div>
-                            
-                            <div class="links">
-                                <a href="http://dfndurga.dothome.co.kr" target="_blank" class="link_more">PC링크 바로가기</a>
-                                <a href="http://mdfndurga.dothome.co.kr" target="_blank" class="link_more">MOBILE링크 바로가기</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="cont res">
-                        <img src="img/anssem.png" alt="ANSSEM 목업이미지">
-                        <div class="link_wrap">
-                            <h2>PC,MOBILE 반응형</h2>
-                            <h2>ANSSEM</h2>
-                            <div class="hash_wrap">
-                                <span>#5일</span>
-                                <span>#반응형</span>
-                                <span>#디자인100%</span>
-                                <span>#퍼블리싱100%</span>
-                            </div>
-                            <div class="links">
-                                <a href="http://anssem.dothome.co.kr" target="_blank" class="link_more">링크 바로가기</a>
-                            </div>
-                        </div>
-                    </div>        
-                </div>
-            </section>
-
-            <section class="contact">
-                <h2>ABOUT</h2>
-                <div class="innerWrap">
-
-                    <div class="introduce">
-                        <img src="img/mimoticon.png" alt="프로필이미지">
-                        <p>
-                            퍼블리셔에서 시작하여, <br>
-                            프론트엔드 개발자까지 꿈꾸는 <br>
-                            신입 퍼블리셔 김창근 입니다.
-                        </p>
-                    </div>
-                    
-                    <div class="information">
-                        <div class="box">
-                            <p>PROFILE</p>
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td>이름</td>
-                                        <td>김창근</td>
-                                    </tr>
-                                    <tr>
-                                        <td>생년월일</td>
-                                        <td>1994.05.11</td>
-                                    </tr>
-                                    <tr>
-                                        <td>지역</td>
-                                        <td>서울시 은평구 녹번동</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="box">
-                            <p>CONTACT</p>
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td>Tel</td>
-                                        <td>+82 10-9920-8753</td>
-                                    </tr>
-                                    <tr>
-                                        <td>E-mail</td>
-                                        <td>xgeunx@gmail.com</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="box">
-                            <p>ABOUT ME</p>
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td>→ 따뜻한 친화력으로 협업에 능숙합니다.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>→ 주어진 일을 계획적으로 처리합니다.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>→ 깔끔하고 간결한 코드를 추구합니다.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>→ 능력향상을 위해 끊임없이 노력합니다.</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="box2">
-                            <p>SKILLS</p>
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td><img src="img/html.png" alt=""></td>
-                                        <td><img src="img/css.png" alt=""></td>
-                                        <td><img src="img/js.png" alt=""></td>
-                                        <td><img src="img/jquery.png" alt=""></td>
-                                        <td><img src="img/illu.png" alt=""></td>
-                                        <td><img src="img/photoshop.png" alt=""></td>
-                                        <td><img src="img/figma.png" alt=""></td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                    <div class="infoAll">
+                        <div class="info profile">
+                            <h2>PROFILE</h2>
+                            <ul>
+                                <li>
+                                    <p>Name</p>
+                                    <p>김창근</p>
+                                </li>
+                                <li>
+                                    <p>Birth</p>
+                                    <p>1994.05.11</p>
+                                </li>
+                                <li>
+                                    <p>Phone</p>
+                                    <p>010-9920-8753</p>
+                                </li>
+                                <li>
+                                    <p>Mail</p>
+                                    <p>xgeunx@gmail.com</p>
+                                </li>
+                            </ul>
+                        </div><!-- e:info -->
+                        <div class="info myInfo">
+                            <h2>ABOUT ME</h2>
+                            <ul>
+                                <li>
+                                    <p>→</p>
+                                    <p>따뜻한 친화력으로 협업에 능숙합니다</p>
+                                </li>
+                                <li>
+                                    <p>→</p>
+                                    <p>주어진 일을 계획적으로 처리합니다.</p>
+                                </li>
+                                <li>
+                                    <p>→</p>
+                                    <p>능력향상을 위해 항상 노력합니다.</p>
+                                </li>
+                            </ul>
+                        </div><!-- e:info -->
+                        <div class="info">
+                            <h2>CERTIFICATE</h2>
+                            <ul>
+                                <li>
+                                    <p>2022</p>
+                                    <p>UI/UX디자인,퍼블리셔 과정 수료</p>
+                                </li>
+                                <li>
+                                    <p>2021</p>
+                                    <p>컴퓨터활용능력 1급</p>
+                                </li>
+                                <li>
+                                    <p>2018</p>
+                                    <p>컴퓨터활용능력 2급</p>
+                                </li>
+                            </ul>
+                        </div><!-- e:info -->
+                        <div class="info skills">
+                            <h2>SKILLS</h2>
+                            <ul>
+                                <li>
+                                    <p>HTML CSS</p>
+                                    <p class="level">
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                        <span class="empty"></span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>Javascript</p>
+                                    <p class="level">
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                        <span class="empty"></span>
+                                        <span class="empty"></span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>jQuery</p>
+                                    <p class="level">
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                        <span class="empty"></span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>Figma</p>
+                                    <p class="level">
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                        <span class="empty"></span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>Photoshop</p>
+                                    <p class="level">
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                        <span class="empty"></span>
+                                        <span class="empty"></span>
+                                    </p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </section>
-        </main>
+            </div>
+            
+            <div class="section" id="portfolio_page">
+                <h1>02. PORTFOLIO</h1>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="contents">
+                                <div class="mokup">
+                                    <img src="img/page/bottega.png" alt="안샘목업이미지">
+                                </div>
+                                <div class="textWrap">
+                                    <div class="title">
+                                        <h2>BOTTEGA VENETA</h2>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <span>TYPE</span>
+                                            <span>Resposive Web</span>
+                                        </li>
+                                        <li>
+                                            <span>PAGE</span>
+                                            <span>Main Page</span>
+                                        </li>
+                                        <li>
+                                            <span>TOOL</span>
+                                            <span>Figma, HTML, CSS, JS</span>
+                                        </li>
+                                        <li>
+                                            <span>USE</span>
+                                            <span>Fullpage.js, Swiper js, </span>
+                                        </li>
+                                        <li>
+                                            <span>참여도</span>
+                                            <span>100%</span>
+                                        </li>
+                                    </ul>
+                                <div class="link-wrap">
+                                    <a href="http://xgeun.github.io/bottega" target="_blank">
+                                        SITE →
+                                    </a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="contents">
+                                <div class="mokup">
+                                    <img src="img/page/df.png" alt="DF목업이미지">
+                                </div>
+                                <div class="textWrap">
+                                    <div class="title">
+                                        <h2>DF&DURGA</h2>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <span>TYPE</span>
+                                            <span>Adaptive Web</span>
+                                        </li>
+                                        <li>
+                                            <span>PAGE</span>
+                                            <span>Main Page + Sub*20</span>
+                                        </li>
+                                        <li>
+                                            <span>TOOL</span>
+                                            <span>Photoshop, HTML, CSS, JS</span>
+                                        </li>
+                                        <li>
+                                            <span>USE</span>
+                                            <span>Genu Board, Swiper js, Scroll Event</span>
+                                        </li>
+                                        <li>
+                                            <span>참여도</span>
+                                            <span>100%</span>
+                                        </li>
+                                    </ul>
+                                <div class="link-wrap">
+                                    <a href="http://anssem.dothome.co.kr" target="_blank">
+                                        SITE →
+                                    </a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="contents">
+                                <div class="mokup">
+                                    <img src="img/page/euro.png" alt="안샘목업이미지">
+                                </div>
+                                <div class="textWrap">
+                                    <div class="title">
+                                        <h2>EURO BIKE TOUR</h2>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <span>TYPE</span>
+                                            <span>Resposive Web</span>
+                                        </li>
+                                        <li>
+                                            <span>PAGE</span>
+                                            <span>Main Page</span>
+                                        </li>
+                                        <li>
+                                            <span>TOOL</span>
+                                            <span>Figma, HTML, CSS, JS</span>
+                                        </li>
+                                        <li>
+                                            <span>USE</span>
+                                            <span>Swiper js, Tap Menu,</span>
+                                        </li>
+                                        <li>
+                                            <span>참여도</span>
+                                            <span>100%</span>
+                                        </li>
+                                    </ul>
+                                <div class="link-wrap">
+                                    <a href="http://anssem.dothome.co.kr" target="_blank">
+                                        SITE →
+                                    </a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="contents">
+                                <div class="mokup">
+                                    <img src="img/page/anssem.png" alt="안샘목업이미지">
+                                </div>
+                                <div class="textWrap">
+                                    <div class="title">
+                                        <h2>ANSSEM 인테리어</h2>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <span>TYPE</span>
+                                            <span>Resposive Web</span>
+                                        </li>
+                                        <li>
+                                            <span>PAGE</span>
+                                            <span>Main Page</span>
+                                        </li>
+                                        <li>
+                                            <span>TOOL</span>
+                                            <span>Figma, HTML, CSS, JS</span>
+                                        </li>
+                                        <li>
+                                            <span>USE</span>
+                                            <span>Date Picker, Swiper js, Tap Menu, Scroll Event</span>
+                                        </li>
+                                        <li>
+                                            <span>참여도</span>
+                                            <span>100%</span>
+                                        </li>
+                                    </ul>
+                                <div class="link-wrap">
+                                    <a href="http://anssem.dothome.co.kr" target="_blank">
+                                        SITE →
+                                    </a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="contents">
+                                <div class="mokup">
+                                    <img src="img/page/hass.png" alt="하스스튜디오목업이미지">
+                                </div>
+                                <div class="textWrap">
+                                    <div class="title">
+                                        <h2>HASS 스튜디오</h2>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <span>TYPE</span>
+                                            <span>Resposive Web</span>
+                                        </li>
+                                        <li>
+                                            <span>PAGE</span>
+                                            <span>Main Page</span>
+                                        </li>
+                                        <li>
+                                            <span>TOOL</span>
+                                            <span>Figma, HTML, CSS</span>
+                                        </li>
+                                        <li>
+                                            <span>USE</span>
+                                            <span>Hover Effect, CSS-Flex</span>
+                                        </li>
+                                        <li>
+                                            <span>참여도</span>
+                                            <span>70%</span>
+                                        </li>
+                                    </ul>
+                                <div class="link-wrap">
+                                    <a href="http://anssem.dothome.co.kr" target="_blank">
+                                        SITE →
+                                    </a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <div class="section" id="portfolio_contact">
+                <h1>03. CONTACT</h1>
+                <div class="inner_wrap">
+                    <div class="wrap">
+                        <div class="kakao_link">
+                            <div class="text_wrap">
+                                <img src="img/contact/openchat.png" alt="오픈채팅QR이미지">
+                                <div class="kakao_btn">
+                                    <a href="https://open.kakao.com/o/sj38z50e" target="_blank">KAKAOTALK OPENCHAT</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mail_link">
+                            <div class="text_wrap">
+                                <h2>xgeunx@gmail.com</h2>
+                                <div class="mail_btn">
+                                    <a href="mailto:xgeunx@gmail.com" target="_blank">SEND MAIL</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flow-container">
+                    <div class="flow-text">
+                        <div class="flow-wrap">Thank you for coming my portfolio page. <span>Contact Me Anytime!</span></div>
+                        <div class="flow-wrap">Thank you for coming my portfolio page. <span>Contact Me Anytime!</span></div>
+                        <div class="flow-wrap">Thank you for coming my portfolio page. <span>Contact Me Anytime!</span></div>
+                        <div class="flow-wrap">Thank you for coming my portfolio page. <span>Contact Me Anytime!</span></div>    
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
