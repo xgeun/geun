@@ -23,8 +23,7 @@ $(document).ready(function(){
   });
 
   $(window).trigger('resize');
-});
-
+}); 
 
 
 // page
@@ -33,6 +32,7 @@ $(document).ready(function(){
   var $swiper_container = $portfolio_page.find(".swiper .swiper-wrapper");
 
   $('#fullpage').fullpage({
+    scrollOverflow: true,
     responsiveWidth: 500,
     onLeave: function(index, nextIndex){
       if(nextIndex == 3){ // 포트폴리오 화면이면

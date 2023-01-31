@@ -1,5 +1,5 @@
 @charset "utf-8";
-#portfolio_contact{background-color: #333;}
+#portfolio_contact{background-color: #000;}
 #portfolio_contact h1{position: absolute; top: 50px; left: 50px; font-family: '87MMILSANG'; font-size: 5rem; color: rgba(237, 237, 237, 0.9); margin-top: 50px;}
 
 #portfolio_contact .wrap{width: 100%; display: flex;  justify-content: space-between;}
@@ -78,7 +78,7 @@
 
 /* mobile */
 @media screen and (max-width:500px) {
-  #portfolio_contact h1{display: block; font-size: 2rem;}
+  #portfolio_contact h1{display: none;}
   
   #portfolio_contact .kakao_link{width: 80%; height: 200px; margin: 20px auto;}
   #portfolio_contact .kakao_link img{width: 150px; height: 150px; padding: 15px 15px;}
@@ -92,7 +92,6 @@
   .flow-text{bottom: 40px;}
 }
 @media screen and (max-width:400px) {
-  #portfolio_contact h1{display: none;}
   #portfolio_contact .mail_link h2{font-size: 1.5rem;}
   .flow-text{bottom: 30px;}
 }

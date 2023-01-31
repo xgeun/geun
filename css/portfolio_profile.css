@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-#portfolio_profile{background-color: #333;}
+#portfolio_profile{background-color: #000; margin: 50px 0;}
 
 #portfolio_profile h1{position: absolute; top: 50px; left: 50px; font-family: '87MMILSANG'; font-size: 5rem; color: #c6ccb0; margin-top: 50px; }
 
@@ -68,6 +68,7 @@
     #portfolio_profile .contents_wrap .infoAll .info {gap:12px;}
     #portfolio_profile .contents_wrap .infoAll .info h2 {
         padding-top:8px; border-top:1px solid #c6ccb0;
+        /* padding-bottom:6px; border-bottom:1px solid #1E445B; */
     }
     #portfolio_profile .contents_wrap .infoAll .info ul li p:nth-child(1) {width: 36px;}
     #portfolio_profile .contents_wrap .infoAll .info.profile ul li p:nth-child(1) {width: 52px;}
