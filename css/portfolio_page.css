@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+
 #portfolio_page h1{position: absolute; top: 50px; left: 50px; font-family: '87MMILSANG'; font-size: 5rem; color: rgba(237, 237, 237, 0.9); margin-top: 50px;}
 #portfolio_page .swiper{width: 100%; height: 100%;}
 #portfolio_page .swiper-wrapper{width: 100%; height: 100%; }
@@ -12,7 +13,6 @@
     border-radius: 50%;
     left: 40%;
     top: 50%;
-    background-color: grey;
     opacity: .6;
     transform: translate3d(-50%, -50%, 0);
     transition: width 1.5s, height 1.5s;
@@ -24,10 +24,11 @@
 }
 
 #portfolio_page .swiper-slide:nth-child(1)::before { background-image: linear-gradient(to bottom, rgba(0,132,61,1) 0%, rgba(255, 255, 255, 0.4) 100%); }
-#portfolio_page .swiper-slide:nth-child(2)::before { background-image: linear-gradient(to bottom, rgba(51,51,51,1) 0%, rgba(255, 255, 255, 1) 100%); }
-#portfolio_page .swiper-slide:nth-child(3)::before { background-image: linear-gradient(to bottom, rgba(255,138,160,1) 0%, rgba(9, 87, 195, 1) 100%); }
-#portfolio_page .swiper-slide:nth-child(4)::before { background-image: linear-gradient(to bottom, rgba(225,207,185,1) 0%, rgba(182,143,107,1) 100%); }
-#portfolio_page .swiper-slide:nth-child(5)::before { background-image: linear-gradient(to bottom, rgba(232,208,198,1) 0%, rgba(162, 202, 222, 1) 100%); }
+#portfolio_page .swiper-slide:nth-child(2)::before { background-image: linear-gradient(to bottom, rgba(217,158,196,1) 0%, rgba(241, 238, 166, 1) 100%); }
+#portfolio_page .swiper-slide:nth-child(3)::before { background-image: linear-gradient(to bottom, rgba(51,51,51,1) 0%, rgba(255, 255, 255, 1) 100%); }
+#portfolio_page .swiper-slide:nth-child(4)::before { background-image: linear-gradient(to bottom, rgba(255,138,160,1) 0%, rgba(9, 87, 195, 1) 100%); }
+#portfolio_page .swiper-slide:nth-child(5)::before { background-image: linear-gradient(to bottom, rgba(225,207,185,1) 0%, rgba(182,143,107,1) 100%); }
+#portfolio_page .swiper-slide:nth-child(6)::before { background-image: linear-gradient(to bottom, rgba(232,208,198,1) 0%, rgba(162, 202, 222, 1) 100%); }
 
 
 #portfolio_page .swiper-button-next{right: 50px;}
