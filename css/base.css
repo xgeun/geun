@@ -38,3 +38,7 @@ label.away{ position: absolute; left: -999em; }
 @media screen and (max-width: 320px){
     *{font-size: 12px; }
 }
+
+@media screen and (max-width: 500px){
+    body{background-color: #000;}
+}
